@@ -10,11 +10,11 @@ public class Desafio2 {
 
         while (!inputValido) {
             try {
-                String entrada = scanner.nextLine().replace(",", ".");
+                String entrada = scanner.nextLine();
                 valor = Double.parseDouble(entrada);
                 inputValido = true;
             } catch (InputMismatchException | NumberFormatException e) {
-                System.out.println("Digite o valor com vírgula.");
+                System.out.println("Digite o valor com ponto.");
             }
         }
 
